@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url(reset.css);
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  margin: 20px 0 0 0;
+}
+.menu {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 60px;
+  border-radius: 20px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.menu li {
+  margin: 0 40px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+/*.sites a {
+  font-size: 50px;
+}*/
+
+body {
+  font-family: 'Muli', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+}
+.main {
+  background-color: rgb(34, 12, 85);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 30px;
+  padding: 40px;
+}
+
+.sites {
+  background-color: rgb(39, 8, 8);
+  color: white;
+  border-radius: 20px;
+  list-style: none;
+
+  margin: 30px 30px;
+  padding: 40px;
+}
+
+/*.sites ul {
+  isplay: flex;
+  justify-content: space-around;
+}
+*/
+
+.sites ul li {
+  display: flex;
+}
+
+li p {
+  margin: 0 50px;
+}
+
+.frame {
+  margin: 40px 0;
+}
+.about {
+  width: 600px;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .menu {
+    margin: 0 10px;
+  }
+
+  .header {
+    margin: 10px 0 0 0;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .slide {
+    margin: 3px;
+  }
+  .slide.active {
+    flex: 17;
+  }
+  .menu li {
+    margin: 0 15px;
+  }
+
+  .aboutme {
+    margin: 0 10px;
+  }
+
+  .aboutme p {
+    padding: 20px;
+    text-align: center;
+  }
+}
